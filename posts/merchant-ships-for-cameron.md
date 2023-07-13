@@ -1,0 +1,17 @@
+---
+artist: "Merchant Ships"
+album: "For Cameron"
+release_date: "2010-04-09"
+genres: ["Screamo", "Midwest Emo"]
+cover_art_url: "/album_art/merchant-ships-for-cameron.jpg"
+---
+
+
+## Track Listing
+
+1. Things Left in Last Year
+2. Dying
+3. Sentinel
+4. Sleep Patterns
+5. Good Weekend
+6. Something That Matters
