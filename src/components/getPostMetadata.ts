@@ -2,7 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import PostMetadata from "../components/PostMetadata";
 
-const getPostMetadata = (): PostMetadata[] => {
+const getPostMetadata = (sortMethod: string): PostMetadata[] => {
     const folder = "posts/";
     const files = fs.readdirSync(folder);
     const markdownPosts = files.filter((file) => file.endsWith(".md"));
@@ -20,6 +20,17 @@ const getPostMetadata = (): PostMetadata[] => {
             slug: fileName.replace(".md", ""),
         };
     });
+
+    // Sort posts by release date.
+    if (sortMethod === "release_date") {
+        posts.sort((a, b) => {
+            if (a.release_date < b.release_date) {
+                return 1;
+            } else {
+                return -1;
+            }
+        });
+    }
 
     return posts;
 };
