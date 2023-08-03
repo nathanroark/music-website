@@ -68,7 +68,7 @@ function getPostMetadata(searchParams?: {
   }
 
   // Filter for posts that have at least one genre in common with the current filters.
-  if (filterMethod === "some") {
+  if (filterMethod === "some" || filterMethod === "") {
     return posts.filter((post) =>
       post.genres.some((genre: string) => currentFilters.includes(genre))
     );
