@@ -1,13 +1,13 @@
-import fs from 'fs';
-import Markdown from 'markdown-to-jsx';
-import matter from 'gray-matter';
-import getPostMetadata from '../../../components/getPostMetadata';
-import Image from 'next/image';
+import fs from "fs";
+import Markdown from "markdown-to-jsx";
+import matter from "gray-matter";
+import getPostMetadata from "../../../server/getPostMetadata";
+import Image from "next/image";
 
 const getPostContent = (slug: string) => {
-  const folder = 'posts/';
+  const folder = "posts/";
   const file = `${folder}${slug}.md`;
-  const content = fs.readFileSync(file, 'utf8');
+  const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
   return matterResult;
 };
@@ -26,7 +26,7 @@ const createGenreList = (data: any) => {
     components.push(
       <h4
         className="text-lg text-white text-opacity-50 font-bold pl-2"
-        key={data.artist + '-' + data.album + '-' + e}
+        key={data.artist + "-" + data.album + "-" + e}
       >
         {e}
       </h4>
@@ -61,7 +61,9 @@ const PostPage = (props: any) => {
           </div>
         </div>
         <div className="pb-16 pl-4 invisible lg:visible">
-          <div className="text-2xl text-white text-opacity-75 font-bold">Genres: </div>
+          <div className="text-2xl text-white text-opacity-75 font-bold">
+            Genres:{" "}
+          </div>
           {createGenreList(post.data)}
         </div>
       </div>

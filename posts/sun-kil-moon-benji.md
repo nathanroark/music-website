@@ -2,8 +2,9 @@
 artist: "Sun Kil Moon"
 album: "Benji"
 release_date: "2014-02-11"
-genres: ["Contemporary Folk", "Singer-Songwriter", "Americana"]
+genres: ["Contemporary Folk", "Singer Songwriter", "Americana"]
 cover_art_url: "/album_art/sun-kil-moon-benji.jpg"
+post_date: "2022-01-01"
 ---
 
 ## Track Listing

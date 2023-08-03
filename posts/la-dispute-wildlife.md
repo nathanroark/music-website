@@ -2,12 +2,12 @@
 artist: "La Dispute"
 album: "Wildlife"
 release_date: "2010-10-04"
-genres: ["Post-Hardcore", "Screamo", "Emo", "Poetry"]
+genres: ["Post Hardcore", "Screamo", "Emo", "Poetry"]
 cover_art_url: "/album_art/la-dispute-wildlife.jpeg"
+post_date: "2022-01-01"
 ---
 
 ## Track Listing
-
 
 1. A Departure
 2. Harder Harmonies

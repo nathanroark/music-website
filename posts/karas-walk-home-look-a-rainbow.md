@@ -1,9 +1,10 @@
 ---
 artist: "Kara's Walk Home"
-album: 'Look! A Rainbow!'
-release_date: '2022-06-01'
-genres: ['Midwest Emo', 'Post-Hardcore', 'Post-Rock']
-cover_art_url: '/album_art/karas-walk-home-look-a-rainbow.jpg'
+album: "Look! A Rainbow!"
+release_date: "2022-06-01"
+genres: ["Midwest Emo", "Post Hardcore", "Post-Rock"]
+cover_art_url: "/album_art/karas-walk-home-look-a-rainbow.jpg"
+post_date: "2023-01-01"
 ---
 
 ## Track Listing

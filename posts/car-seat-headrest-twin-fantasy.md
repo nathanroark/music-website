@@ -2,8 +2,9 @@
 artist: "Car Seat Headrest"
 album: "Twin Fantasy"
 release_date: "2018-02-16"
-genres: ["Indie Rock", "Singer-Songwriter"]
+genres: ["Indie Rock", "Singer Songwriter"]
 cover_art_url: "/album_art/car-seat-headrest-twin-fantasy.jpg"
+post_date: "2022-01-01"
 ---
 
 ## Track Listing

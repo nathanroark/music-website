@@ -4,9 +4,11 @@ album: "Loveless"
 release_date: "1991-11-11"
 genres: ["Shoegaze", "Noise Pop", "Dream Pop", "Neo-Psychedelia"]
 cover_art_url: "/album_art/my-bloody-valentine-loveless.png"
+post_date: "2022-01-01"
 ---
 
 ## Track Listing
+
 1. Only Shallow
 2. Loomer
 3. Touched

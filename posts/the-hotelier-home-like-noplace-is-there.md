@@ -2,8 +2,9 @@
 artist: "The Hotelier"
 album: "Home, Like Noplace Is There"
 release_date: "2014-02-18"
-genres: ["Emo", "Post-Hardcore", "Midwest Emo", "Pop Punk"]
+genres: ["Emo", "Post Hardcore", "Midwest Emo", "Pop Punk"]
 cover_art_url: "/album_art/the-hotelier-home-like-noplace-is-there.jpg"
+post_date: "2022-01-01"
 ---
 
 ## Track Listing

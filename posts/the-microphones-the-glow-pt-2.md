@@ -2,8 +2,16 @@
 artist: "The Microphones"
 album: "The Glow Pt. 2"
 release_date: "2001-09-11"
-genres: ["Indie Folk", "Psychedelic Folk", "Noise Rock", "Advent-Folk", "Singer-Songwriter"]
+genres:
+  [
+    "Indie Folk",
+    "Psychedelic Folk",
+    "Noise Rock",
+    "Advent-Folk",
+    "Singer Songwriter",
+  ]
 cover_art_url: "/album_art/the-microphones-the-glow-pt-2.jpg"
+post_date: "2022-01-01"
 ---
 
 ## Track Listing

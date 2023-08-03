@@ -2,14 +2,14 @@
 artist: "明日の叙景 (Asunojokei)"
 album: "アイランド (Island)"
 release_date: "2022-07-27"
-genres: ["Blackgaze", "Post-Hardcore", "Screamo", "J-Rock", "Post-Metal"]
+post_date: "2023-01-01"
+genres: ["Blackgaze", "Post Hardcore", "Screamo", "J-Rock", "Post Metal"]
 cover_art_url: "/album_art/asunojokei-island.jpg"
 ---
 
 ## Thoughts
 
 So many awesome ideas were put into this album. Easily one of the most creative Blackgaze albums that I've heard.
-
 
 ## Track Listing
 

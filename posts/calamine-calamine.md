@@ -1,13 +1,14 @@
 ---
-artist: 'Calamine'
-album: 'Calamine'
-release_date: '1999'
-genres: ['Indie Rock', 'Midwest Emo']
-cover_art_url: '/album_art/calamine-calamine.jpg'
-post_date: '2023-07-31'
+artist: "Calamine"
+album: "Calamine"
+release_date: "1999-01-01"
+genres: ["Indie Rock", "Midwest Emo"]
+cover_art_url: "/album_art/calamine-calamine.jpg"
+post_date: "2023-07-31"
 ---
 
 ## Thoughts
+
 This album is very simple and has a lot 90s pop insparation on it.
 It really isn't something I would normally enjoy but there is something really enjoyable that keeps me coming back to it.
 The leading song, Trampoline, has such a comforting feel to it with a simple repetative hook that makes me relax each time I start listing to the album.
