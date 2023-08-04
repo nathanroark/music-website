@@ -2,9 +2,9 @@ import fs from "fs";
 import matter from "gray-matter";
 import PostMetadata from "../app/types";
 
-function getPostMetadata(searchParams?: {
+function getPostMetadata(searchParams: {
   [key: string]: string | undefined;
-}): PostMetadata[] {
+}={}): PostMetadata[] {
   const sortMethod = searchParams?.sort || "";
   const filterMethod = searchParams?.filterMethod || "";
   const filters = searchParams?.filters || "";
