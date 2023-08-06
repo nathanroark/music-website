@@ -40,7 +40,7 @@ const PostPage = (props: any) => {
   const post = getPostContent(slug);
   return (
     <div className="pt-[3rem]">
-      <div className="fixed bg-black p-3 w-full h-[12rem] lg:w-1/4 lg:h-screen lg:max-w-xs flex flex-col justify-between">
+      <div className="fixed p-3 bg-black lg:bg-inherit w-full h-[12rem] lg:w-[14rem] lg:h-screen lg:max-w-xs flex flex-col justify-between  lg:border-r lg:border-zinc-600 ">
         <div className="flex flex-row justify-evenly items-center lg:justify-normal lg:flex-col gap-4 h-[12rem] pb-5 w-full">
           <Image
             src={post.data.cover_art_url}
@@ -67,7 +67,7 @@ const PostPage = (props: any) => {
           {createGenreList(post.data)}
         </div>
       </div>
-      <div className="flex justify-center pt-[12rem] lg:w-3/4 lg:float-right lg:pt-[0rem] px-2 ">
+      <div className="flex justify-center pt-[12rem] lg:w-[calc(100%-14rem)] lg:float-right lg:pt-[0rem] px-2 ">
         <article className="prose prose-invert md:prose-md lg:prose-lg xl:prose-xl 2xl:prose-2xl">
           <Markdown>{post.content}</Markdown>
         </article>

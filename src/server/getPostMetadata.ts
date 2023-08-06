@@ -39,11 +39,19 @@ function getPostMetadata(searchParams: {
       break;
     }
     case "artist_alphabetical": {
-      posts.sort((a, b) => (a.artist > b.artist ? 1 : -1));
-      break;
+      posts.sort((a, b) => {
+        let artistA = a.artist.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+        let artistB = b.artist.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+        return artistA > artistB ? 1 : -1;
+      });
+        break;
     }
     case "artist_reverse_alphabetical": {
-      posts.sort((a, b) => (a.artist < b.artist ? 1 : -1));
+      posts.sort((a, b) => {
+        let artistA = a.artist.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+        let artistB = b.artist.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+        return artistA < artistB ? 1 : -1;
+      });
       break;
     }
     default: {

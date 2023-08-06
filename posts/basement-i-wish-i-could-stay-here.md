@@ -7,6 +7,8 @@ genres: ["Emo", "Post Hardcore"]
 cover_art_url: "/album_art/basement-i-wish-i-could-stay-here.jpg"
 ---
 
+## I Wish I Could Stay Here
+
 ## Track Listing
 
 1. Fading
