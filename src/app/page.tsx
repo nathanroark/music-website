@@ -24,7 +24,11 @@ export default function Home({
 }: {
   searchParams?: { [key: string]: string | undefined };
 }) {
-  const postMetadata = getPostMetadata(searchParams);
+  const sortMethod = searchParams?.sort || "";
+  const filterMethod = searchParams?.filterMethod || "";
+  const filters = searchParams?.filters || "";
+
+  const postMetadata = getPostMetadata(sortMethod, filterMethod, filters);
   const postPreviews = postMetadata.map((post) => (
     <PostPreview key={post.slug} {...post} />
   ));

@@ -1,13 +1,12 @@
 import fs from "fs";
 import matter from "gray-matter";
 import PostMetadata from "../app/types";
+import genreAnalysis from "./analysis";
 
-function getPostMetadata(searchParams: {
-  [key: string]: string | undefined;
-}={}): PostMetadata[] {
-  const sortMethod = searchParams?.sort || "";
-  const filterMethod = searchParams?.filterMethod || "";
-  const filters = searchParams?.filters || "";
+function getPostMetadata(sortMethod: string, filterMethod: string, filters: string) {
+  //const sortMethod = searchParams?.sort || "";
+  //const filterMethod = searchParams?.filterMethod || "";
+  //const filters = searchParams?.filters || "";
 
   const folder = "posts/";
   const files = fs.readdirSync(folder);
@@ -28,6 +27,9 @@ function getPostMetadata(searchParams: {
     };
   });
 
+  // Just to see genre analysis, should expand on this later.
+  //genreAnalysis();
+
   // Sort posts by release date.
   switch (sortMethod) {
     case "release_date": {
@@ -44,7 +46,7 @@ function getPostMetadata(searchParams: {
         let artistB = b.artist.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
         return artistA > artistB ? 1 : -1;
       });
-        break;
+      break;
     }
     case "artist_reverse_alphabetical": {
       posts.sort((a, b) => {
@@ -61,11 +63,11 @@ function getPostMetadata(searchParams: {
   }
 
   const currentFilters = filters.split(",").filter((filter) => filter !== "");
-  console.log("getPostMetadata.ts: currentFilters: ", currentFilters);
+  //console.log("getPostMetadata.ts: currentFilters: ", currentFilters);
 
   // Filter posts by genre.
   if (filters.length === 0 || !filters) {
-    console.log("No filters.");
+    //console.log("No filters.");
     return posts;
   }
   // Filter for posts that have all genres in the current filters.
@@ -84,15 +86,15 @@ function getPostMetadata(searchParams: {
 
   // Problem...
   return [
-    {
-      artist: "ERROR",
-      album: "THERE IS A PROBLEM",
-      release_date: "WITH YOUR FILTERS",
-      post_date: "PLEASE TRY AGAIN",
-      genres: ["ERROR"],
-      cover_art_url: "/ERROR",
-      slug: "ERROR",
-    },
+    // {
+    //   artist: "ERROR",
+    //   album: "THERE IS A PROBLEM",
+    //   release_date: "WITH YOUR FILTERS",
+    //   post_date: "PLEASE TRY AGAIN",
+    //   genres: ["ERROR"],
+    //   cover_art_url: "/ERROR",
+    //   slug: "ERROR",
+    // },
   ];
 }
 

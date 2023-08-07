@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { Fragment, useState } from 'react';
 import { Menu, Transition, Combobox } from '@headlessui/react';
-import { ChevronDownIcon, CheckIcon, ChevronUpDownIcon  } from '@heroicons/react/20/solid';
+import { ChevronDownIcon, CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid';
 import clsx from 'clsx';
 
 const Sidebar = () => {
@@ -44,14 +44,51 @@ const Sidebar = () => {
 
   const FilterMethods = ['some', 'every'];
 
+
   const genreList = [
     'Midwest Emo',
-    'Screamo',
     'Shoegaze',
-    'Math Rock',
-    'Post Hardcore',
-    'Post Rock',
     'Indie Rock',
+    'Post Hardcore',
+    'Screamo',
+    'J-Rock',
+    'Singer Songwriter',
+    'Post Rock',
+    'Emo',
+    'Indietronica',
+    'Indie Folk',
+    'Noise Pop',
+    'Neo-Psychedelia',
+    'Math Rock',
+    'Noise Rock',
+    'Psychedelic Folk',
+    'Blackgaze',
+    'Post Metal',
+    'Experemental Rock',
+    'Slowcore',
+    'Sadcore',
+    'Folktronica',
+    'Post-Punk',
+    'Drone',
+    'Post-Industrial',
+    'Gothic Rock',
+    'Post-Hardcore',
+    'Spoken Word',
+    'Poetry',
+    'Trip Hop',
+    'Indie Pop',
+    'Contemporary Folk',
+    'Americana',
+    'Pop Punk',
+    'Advent-Folk',
+    'Neo-soul',
+    'Psychedelic Soul',
+    'Funk',
+    'Funktronica',
+    'Acid Jazz',
+    'Breakcore',
+    'Atmospheric Drum and Bass',
+    'Electronic',
   ];
 
   const appliedFilters = genreList.filter((genre) => currentFilters.includes(genre));
@@ -59,7 +96,7 @@ const Sidebar = () => {
   const availableFilters = genreList.filter((genre) => !currentFilters.includes(genre));
 
   return (
-    <div className="fixed top-0 left-0 w-[14rem] p-4 sm:flex flex-col gap-10 border-r border-zinc-600 pt-[3rem] h-screen mt-2 rounded-md hidden">
+    <div className="fixed top-0 left-0 w-[14rem] p-4 sm:flex flex-col gap-10 border-r border-zinc-600 pt-[3rem] h-screen mt-2 rounded-sm hidden">
       <div>
         <h2 className="text-2xl text-zinc-100 font-bold mb-4">Sort Method</h2>
         <SortDropdown
@@ -67,7 +104,7 @@ const Sidebar = () => {
           sortMethod={sortMethod}
           appliedFilters={appliedFilters}
           filterMethod={filterMethod}
-        />    
+        />
       </div>
       <div>
         <h2 className="text-2xl text-zinc-100 font-bold mb-4">Filter Method</h2>
@@ -99,9 +136,9 @@ const Sidebar = () => {
       </div>
       <div className="flex flex-col gap-2">
         <h2 className="text-2xl text-zinc-100 font-bold mb-2">Genre Filters</h2>
-    
+
         <div className="flex flex-col gap-1">
-          {appliedFilters.map((name, index) => {
+          {appliedFilters.map((name) => {
             return (
               <div key={name + 'selected genre'}>
                 <Link
@@ -115,7 +152,7 @@ const Sidebar = () => {
                     },
                   }}
                   className="w-full flex justify-center items-center bg-zinc-900  hover:bg-black 
-                border border-zinc-400 rounded-md duration-300 ease-in-out relative py-2 group"
+                border border-zinc-400 rounded-sm duration-300 ease-in-out relative py-2 group"
                 >
                   <span className="relative ">
                     <span className="text-zinc-300 group-hover:line-through group-hover:text-red-600">
@@ -144,7 +181,7 @@ function SortDropdown({
   appliedFilters,
   filterMethod,
 }: {
-  sortItems: {name: string, query:string}[];
+  sortItems: { name: string, query: string }[];
   sortMethod: string;
   appliedFilters: string[];
   filterMethod: string;
@@ -153,7 +190,7 @@ function SortDropdown({
     <Menu as="div" className="relative inline-block text-left w-full">
       <div>
         <Menu.Button
-          className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-zinc-900 px-3 py-2 text-sm font-semibold shadow-sm ring-1 
+          className="inline-flex w-full justify-center gap-x-1.5 rounded-sm bg-zinc-900 px-3 py-2 text-sm font-semibold shadow-sm ring-1 
         ring-inset ring-gray-400 hover:bg-zinc-800 text-zinc-200"
         >
           {sortItems.find((item) => item.query === sortMethod)?.name}
@@ -170,7 +207,7 @@ function SortDropdown({
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-5/6 origin-top-right rounded-md bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 origin-top-right rounded-sm bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1 ring-1 ring-zinc-300">
             {sortItems.map((item, index) => {
               return (
@@ -187,6 +224,7 @@ function SortDropdown({
                       }}
                       className={clsx(
                         active ? ' text-green-500' : 'text-zinc-200',
+                        index != 0 ? 'border-t border-zinc-600' : '',
                         'block px-4 py-2 text-sm cursor-pointer text-center w-full'
                       )}
                     >
@@ -218,7 +256,7 @@ function GenreDropdown({
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button
-          className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-zinc-900 px-3 py-2 text-sm font-semibold shadow-sm ring-1 
+          className="inline-flex w-full justify-center gap-x-1.5 rounded-sm bg-zinc-900 px-3 py-2 text-sm font-semibold shadow-sm ring-1 
         ring-inset ring-gray-300 hover:bg-zinc-800 text-zinc-200"
         >
           Add Genres
@@ -235,7 +273,8 @@ function GenreDropdown({
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0  mt-2 w-5/6 origin-top-right rounded-md bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 mt-2 max-h-[16rem] z-10 overflow-y-scroll ring-1 ring-zinc-300  
+          origin-top-right rounded-sm bg-zinc-900 focus:outline-none">
           <div className="py-1 ring-1 ring-zinc-300">
             {availableFilters.map((name, index) => {
               return (
@@ -252,6 +291,7 @@ function GenreDropdown({
                       }}
                       className={clsx(
                         active ? ' text-green-500' : 'text-zinc-200',
+                        index != 0 ? 'border-t border-zinc-600' : '',
                         'block px-4 py-2 text-sm cursor-pointer text-center w-full'
                       )}
                     >
