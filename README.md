@@ -2,7 +2,7 @@
 
 ## A Music Website where I post albums that I like and maybe say something about them
 
-### Static Blog from Markdown Files using the NextJS
+### Static Blog from Markdown Files using the NextJS App Dir
 
 #### This app is built using the this tech
 
