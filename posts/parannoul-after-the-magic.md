@@ -2,8 +2,19 @@
 artist: "파란노을 [Parannoul]"
 album: "After the Magic"
 release_date: "2023-01-28"
-genres: ["Shoegaze", "Indie Rock", "Dream Pop", "Post-Rock", "Indietronica", "Emo", "Noise Pop", "Neo-Psychedelia"]
+genres:
+  [
+    "Shoegaze",
+    "Indie Rock",
+    "Dream Pop",
+    "Post-Rock",
+    "Indietronica",
+    "Emo",
+    "Noise Pop",
+    "Neo-Psychedelia",
+  ]
 cover_art_url: "/album_art/parannoul-after-the-magic.jpg"
+post_date: "2022-01-01"
 ---
 
 ## Track Listing

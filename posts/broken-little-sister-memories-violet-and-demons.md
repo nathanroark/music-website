@@ -1,9 +1,10 @@
 ---
-artist: 'Broken Little Sister'
-album: 'Memories, Violet & Demons'
-release_date: '2010-11-17'
-genres: ['Shoegaze', 'Dream Pop', 'Indietronica']
-cover_art_url: '/album_art/broken-little-sister-memories-violet-and-demons.jpg'
+artist: "Broken Little Sister"
+album: "Memories, Violet & Demons"
+release_date: "2010-11-17"
+post_date: "2022-01-01"
+genres: ["Shoegaze", "Dream Pop", "Indietronica"]
+cover_art_url: "/album_art/broken-little-sister-memories-violet-and-demons.jpg"
 ---
 
 ## Thoughts

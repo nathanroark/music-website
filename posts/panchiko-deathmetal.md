@@ -4,6 +4,7 @@ album: "D>E>A>T>H>M>E>T>A>L"
 release_date: "2000-06-18"
 genres: ["Indie Rock", "Dream Pop", "Trip Hop", "Indietronica"]
 cover_art_url: "/album_art/panchiko-deathmetal.png"
+post_date: "2023-01-01"
 ---
 
 ## Track Listing
@@ -14,5 +15,5 @@ cover_art_url: "/album_art/panchiko-deathmetal.png"
 4. The Eyes of Ibad
 
 ## Misc
-[The Panchiko Pastebin](https://pastebin.com/cbFkxD2m)
 
+[The Panchiko Pastebin](https://pastebin.com/cbFkxD2m)

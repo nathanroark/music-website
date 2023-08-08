@@ -1,9 +1,10 @@
 ---
 artist: "きのこ帝国 Kinoko Teikoku"
 album: "渦になる (Uzu ni naru)"
-release_date: "2022-07-27"
+release_date: "2013-02-06"
 genres: ["Indie Rock", "J-Rock", "Dream Pop", Shoegaze]
 cover_art_url: "/album_art/kinoko-teikoku-uzu-ni-naru.jpg"
+post_date: "2022-02-01"
 ---
 
 ## Track Listing

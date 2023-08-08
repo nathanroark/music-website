@@ -2,8 +2,9 @@
 artist: "Mount Eerie"
 album: "A Crow Looked at Me"
 release_date: "2017-03-24"
-genres: ["Singer-Songwriter", "Indie Folk"]
+genres: ["Singer Songwriter", "Indie Folk"]
 cover_art_url: "/album_art/mount-eerie-a-crow-looked-at-me.jpg"
+post_date: "2022-01-01"
 ---
 
 ## Track Listing

@@ -2,14 +2,15 @@
 artist: "Brave Little Abacus"
 album: "Just Got Back From the Discomfort (We're Alright)"
 release_date: "2010-05-29"
+post_date: "2023-01-01"
 genres: ["Midwest Emo", "Experemental Rock", "Math Rock"]
 cover_art_url: "/album_art/brave-little-abacus-just-got-back-from-the-discomfort-were-alright.jpg"
 ---
 
-## Thoughts 
+## Thoughts
 
 The second and final album from Brave Little Abacus.
-I absolutely love this album. 
+I absolutely love this album.
 It is a must listen for anyone who enjoys Midwest Emo.
 
 ## Track Listing
@@ -26,4 +27,3 @@ It is a must listen for anyone who enjoys Midwest Emo.
 10. Allston, Massachusetts December 2009— (January 2010)
 11. Bug-Infested Floorboards (Can We Please Just Leave This Place, Now.)
 12. Orange, Blue With Stripes
-

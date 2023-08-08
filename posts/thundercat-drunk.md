@@ -1,9 +1,18 @@
 ---
-artist: 'Thundercat'
-album: 'Drunk'
-release_date: '2017-02-24'
-genres: ['Neo-soul', 'Psychedelic Soul', 'Funk', 'Funktronica', 'Acid Jazz', 'Neo-Psychedelia']
-cover_art_url: '/album_art/thundercat-drunk.jpg'
+artist: "Thundercat"
+album: "Drunk"
+release_date: "2017-02-24"
+genres:
+  [
+    "Neo-soul",
+    "Psychedelic Soul",
+    "Funk",
+    "Funktronica",
+    "Acid Jazz",
+    "Neo-Psychedelia",
+  ]
+cover_art_url: "/album_art/thundercat-drunk.jpg"
+post_date: "2022-01-01"
 ---
 
 ## Thoughts

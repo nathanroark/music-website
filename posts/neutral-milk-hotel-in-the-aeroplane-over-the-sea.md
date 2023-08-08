@@ -2,14 +2,14 @@
 artist: "Neutral Milk Hotel"
 album: "In the Aeroplane Over the Sea"
 release_date: "1998-02-10"
-genres: ["Indie Folk", "Indie Rock", "Psychedelic Folk", "Singer-Songwriter"]
+genres: ["Indie Folk", "Indie Rock", "Psychedelic Folk", "Singer Songwriter"]
 cover_art_url: "/album_art/neutral-milk-hotel-in-the-aeroplane-over-the-sea.jpg"
+post_date: "2022-01-01"
 ---
 
 ## Thoughts
 
 I have to put this album on here. I have so many memories from High School of driving home on country roads at night on my way home while playing this album at full volume through my cheap car speakers.
-
 
 ## Track Listing
 

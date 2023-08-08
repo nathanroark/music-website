@@ -4,13 +4,14 @@ album: "Virtual Death 9 5"
 release_date: "2021-07-29"
 genres: ["Breakcore", "Atmospheric Drum and Bass", "Electronic"]
 cover_art_url: "/album_art/tokyopill-virtual-death-9-5.jpg"
+post_date: "2022-01-01"
 ---
 
 ## Thoughts
+
 This is the first Breakcore album that I was really interested in. There are a lot of interesting sounds and very hauntingly beautiful synths coming in on so much of this thing. I recommend it to anyone who enjoys any amount of Breakcore.
 
 This album is missing several songs on streaming services, I recommend finding other ways to listen to it like their [Bandcamp](https://tokyopill.bandcamp.com/album/virtual-death-9-5?from=band_sub)
-
 
 ## Track Listing
 
