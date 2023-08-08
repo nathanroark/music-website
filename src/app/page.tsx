@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
-import getPostMetadata from "../server/getPostMetadata";
 import PostPreview from "../components/PostPreview";
+import getSearchedPosts from "@/server/getSearchedPosts";
+import Sidebar from "@/components/Sidebar";
 
 function NoAlbumsFound() {
   // TODO: Make this look better
@@ -28,7 +29,7 @@ export default function Home({
   const filterMethod = searchParams?.filterMethod || "";
   const filters = searchParams?.filters || "";
 
-  const postMetadata = getPostMetadata(sortMethod, filterMethod, filters);
+  const postMetadata = getSearchedPosts(sortMethod, filterMethod, filters);
   const postPreviews = postMetadata.map((post) => (
     <PostPreview key={post.slug} {...post} />
   ));
@@ -38,15 +39,18 @@ export default function Home({
   }
 
   return (
-    <div className="flex justify-center items-center flex-col pt-[3rem] sm:pl-[14rem]">
-      <div className="flex justify-center">
-        <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-          <div className="grid gap-2 md:gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 ">
-            {postPreviews}
+    <>
+      <Sidebar />
+      <div className="flex justify-center items-center flex-col pt-[3rem] sm:pl-[14rem]">
+        <div className="flex justify-center">
+          <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
+            <div className="grid gap-2 md:gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 ">
+              {postPreviews}
+            </div>
+            <Footer />
           </div>
-          <Footer />
         </div>
       </div>
-    </div>
+    </>
   );
 }

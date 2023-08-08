@@ -1,7 +1,6 @@
 import "@/styles/globals.css";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/react";
-import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
   title: "Nathans Music Blog",
@@ -30,7 +29,6 @@ export default function RootLayout({
       <html>
         <body className="min-h-screen items-center justify-center bg-zinc-950 no-scrollbar">
           {header}
-          <Sidebar />
           {children}
         </body>
       </html>
