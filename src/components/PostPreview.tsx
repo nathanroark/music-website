@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import type PostMetadata from "../app/types";
 
-// w-[10rem] sm:w=[15rem] md:w-[17rem] xl:w-[20rem
 const PostPreview = (props: PostMetadata) => {
   return (
     <Link
