@@ -1,12 +1,8 @@
 import fs from "fs";
 import matter from "gray-matter";
-import PostMetadata from "../app/types";
-import genreAnalysis from "./analysis";
+//import genreAnalysis from "./analysis";
 
 function getPostMetadata(sortMethod: string, filterMethod: string, filters: string) {
-  //const sortMethod = searchParams?.sort || "";
-  //const filterMethod = searchParams?.filterMethod || "";
-  //const filters = searchParams?.filters || "";
 
   const folder = "posts/";
   const files = fs.readdirSync(folder);
@@ -63,11 +59,9 @@ function getPostMetadata(sortMethod: string, filterMethod: string, filters: stri
   }
 
   const currentFilters = filters.split(",").filter((filter) => filter !== "");
-  //console.log("getPostMetadata.ts: currentFilters: ", currentFilters);
 
   // Filter posts by genre.
   if (filters.length === 0 || !filters) {
-    //console.log("No filters.");
     return posts;
   }
   // Filter for posts that have all genres in the current filters.
@@ -85,6 +79,7 @@ function getPostMetadata(sortMethod: string, filterMethod: string, filters: stri
   }
 
   // Problem...
+  // commented out because it is useful in dev but not in prod.
   return [
     // {
     //   artist: "ERROR",

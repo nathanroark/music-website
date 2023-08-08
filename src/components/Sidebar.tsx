@@ -1,9 +1,9 @@
 'use client';
 import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { Fragment, useState } from 'react';
-import { Menu, Transition, Combobox } from '@headlessui/react';
-import { ChevronDownIcon, CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid';
+import { Fragment } from 'react';
+import { Menu, Transition } from '@headlessui/react';
+import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import clsx from 'clsx';
 
 const Sidebar = () => {
@@ -44,7 +44,7 @@ const Sidebar = () => {
 
   const FilterMethods = ['some', 'every'];
 
-
+  // TODO: get this from the server instead of hardcoding it
   const genreList = [
     'Midwest Emo',
     'Shoegaze',
